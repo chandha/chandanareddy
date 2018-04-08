@@ -1,8 +1,48 @@
 {
 "basics":{
-"photo":"my profile.jpeg",
+"photo":"chandu IAS.jpeg",
 "name":"chandanareddy",
 "phone":"999999999",
 "email":"chandanareddy7799@gmail.com"
-  }
+},
+"skills":[
+  {
+"name":"programming languages",
+"value":"c,c++,JAVA"
+  },
+{
+"name":"operating System",
+"value":"Windows,Linux"
+},
+{
+  "name":"Web technology",
+  "value":"html,css,javascript"
+}
+],
+"education":[
+{
+"course":"B.tech(computer science and engineering)",
+"college":[
+  "Sri venkateshwara institute of technology",
+"2015-2019",
+"65%"
+]
+},
+{
+"course":"Intermediate(M.P.C)",
+"college":[
+  "SLN jr college",
+  "2013-2015",
+  "79%"
+]
+},
+{
+  "course":"ssc",
+  "college":[
+    "Z.P.High school",
+    "2012-2013",
+    "82%"
+  ]
+}
+]
 }

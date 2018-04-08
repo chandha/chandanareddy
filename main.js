@@ -15,6 +15,8 @@ push("data.json",function(text) {
 let ind=JSON.parse(text);
 console.log(ind);
 profile(ind.basics);
+skill(ind.skills);
+edu(ind.education);
 } )
 // for getting through id
 var main=document.getElementById('main');
@@ -40,4 +42,41 @@ left.appendChild(email);
 var ph=document.createElement("h4");
 ph.textContent=basic.phone;
 left.appendChild(ph);
+}
+var right=document.createElement("div");
+right.classList.add("right");
+right.textContent="Technical skills:"
+right.appendChild(document.createElement("HR"));
+main.appendChild(right);
+function skill(techskill){
+var table=document.createElement("table");
+var row="";
+for(var i=0; i <techskill.length; i++) {
+row +="<tr><td>"+techskill[i].name+"</td><td>"+techskill[i].value+"</td></tr>"
+}
+table.innerHTML=row;
+right.appendChild(table);
+
+}
+function edu(Education){
+  var ed=document.createElement("div");
+  ed.classList.add("education");
+  ed.textContent="Education details:";
+  ed.appendChild(document.createElement("HR"));
+  right.appendChild(ed);
+  for(i in Education){
+var e2=document.createElement("h2");
+e2.textContent=Education[i].course;
+var ul=document.createElement("u1");
+for(j in Education[i].college){
+var list=document.createElement("li");
+list.textContent=Education[i].college[j];
+ul.appendChild(list);
+e2.appendChild(ul);
+ed.appendChild(e2);
+
+}
+
+}
+
 }
